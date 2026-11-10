@@ -2,30 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Conversor de temperaturas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de temperatura</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <h1>Conversor de temperaturas</h1>
+    <div class="card">
+        <h2>Temperature Converter</h2>
+        
+        <div class="input-group">
+            <label>Celsius:</label>
+            <input type="number" id="celsius" placeholder="Temperatura en Celcius:">
+        </div>
 
-    <label for="inputTemp">Ingresa la temperatura:</label>
-    <input type="number" id="inputTemp">
+        <div class="input-group">
+            <label>Fahrenheit:</label>
+            <input type="number" id="fahrenheit" placeholder="Temperatura en Fahrenheit:">
+        </div>
 
-    <br><br>
-
-    <label for="selectTipo">Tipo de conversión:</label>
-    <select id="selectTipo">
-        <option value="cf">Celsius a Fahrenheit</option>
-        <option value="fc">Fahrenheit a Celsius</option>
-    </select>
-
-    <br><br>
-
-    <button id="btnConvertir">Convertir</button>
-
-    <h2>Resultado:</h2>
-    <p id="resultado">Aquí aparecerá el resultado...</p>
-
+        <button id="btnConvertir">Convert</button>
+        
+        <p id="resultado"></p>
+    </div>
+    
     <script src="temperaturas.js"></script>
 </body>
 </html>
